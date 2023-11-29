@@ -10,6 +10,7 @@ jobs:
   Deuxieme-job:
     name: Deuxieme Job
     runs-on: ubuntu-latest
+    needs: Premier-job
     steps:
       - run: echo "Deuxieme Job"
       - run: echo "Fin"
